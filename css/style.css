@@ -3,6 +3,7 @@
   box-sizing: border-box;
 }
 
+/* Desktop Layout */
 body {
   background-color: slateblue;
   font-family: 'Libre Baskerville', serif;
@@ -58,12 +59,32 @@ button:active {
 input, output {
   font-weight: bold;
   text-align: center;
-  width: 150px;
-  padding: 5px 40px;
-  margin: 0 10px;
+  width: 120px;
+  padding: 5px 30px;
+  margin: 5px 10px;
   border: 2px purple dotted;
   border-radius: 4px;
   background-color: white;
   font-size: 18pt;
   font-family: 'Libre Baskerville', serif;
+}
+
+/* Mobile Layout */
+@media screen and (max-width:600px) {
+  section {
+    flex-direction: column;
+    gap: 30px;
+    margin: 10px;
+    padding: 20px;
+  }
+
+  ul {
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  output {
+    margin: 10px;
+  }
+
 }
